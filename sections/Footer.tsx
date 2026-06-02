@@ -27,7 +27,7 @@ export default function Footer() {
         <div style={{ height: 1, background: "linear-gradient(to right, transparent, rgba(242, 210, 139, 0.3), transparent)", marginBottom: "4rem" }} />
 
         {/* Links Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "3rem", marginBottom: "5rem" }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-20">
           <div>
             <h4 style={{ fontFamily: '"Inter", sans-serif', fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#F2D28B", marginBottom: "1.5rem" }}>Experience</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>

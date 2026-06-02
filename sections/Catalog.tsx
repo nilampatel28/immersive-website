@@ -49,7 +49,7 @@ export default function Catalog() {
           <div style={{ width: 60, height: 1, background: "rgba(242, 210, 139, 0.4)", margin: "0 auto" }} />
         </div>
         
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {catalogFrames.map((frame, i) => (
             <div
               key={frame.id}

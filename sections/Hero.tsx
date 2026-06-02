@@ -226,15 +226,12 @@ export default function Hero() {
 
         {/* Product panels (SCRUB/LOOP + non-entry/outro frames only) */}
         {showPanels && (
-          <div style={{ position: "absolute", inset: 0, zIndex: 4, display: "grid",
-                         gridTemplateColumns: "minmax(280px,1fr) 2.4fr minmax(280px,1fr)", pointerEvents: "none" }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start",
-                           padding: "80px 20px 80px 44px", pointerEvents: "auto" }}>
+          <div className="absolute inset-0 z-[4] pointer-events-none flex flex-col justify-end pb-24 md:justify-center md:pb-0 px-4 md:px-0 md:grid md:grid-cols-[minmax(280px,1fr)_2.4fr_minmax(280px,1fr)] gap-4 md:gap-0">
+            <div className="flex items-center justify-center md:justify-start md:py-[80px] md:pl-[44px] md:pr-[20px] pointer-events-auto">
               <FrameText frame={currentFrame} visible={true} />
             </div>
-            <div />
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end",
-                           padding: "80px 44px 80px 20px", pointerEvents: "auto" }}>
+            <div className="hidden md:block" />
+            <div className="flex items-center justify-center md:justify-end md:py-[80px] md:pr-[44px] md:pl-[20px] pointer-events-auto">
               <BuyCard frame={currentFrame} visible={true} />
             </div>
           </div>

@@ -42,8 +42,8 @@ export default function Story() {
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         
         {/* Panel 1 */}
-        <div ref={panel1Ref} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "4rem", alignItems: "center", marginBottom: "7rem" }}>
-          <div style={{ order: 1 }}>
+        <div ref={panel1Ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-28">
+          <div className="order-2 md:order-1">
             <p className="label-small" style={{ color: "#F2D28B", marginBottom: "1.5rem" }}>The Philosophy</p>
             <h2 className="display-heading" style={{ fontSize: "clamp(32px, 3.5vw, 48px)", whiteSpace: "pre-line", marginBottom: "2rem" }}>
               {"Born from sacred\nlandscapes of India"}
@@ -53,7 +53,7 @@ export default function Story() {
               Each essence is drawn from a specific terrain — a desert at dawn, a jungle after rain, a Himalayan ridge at altitude. We do not blend in laboratories. We observe, we collect, we distill.
             </p>
           </div>
-          <div style={{ order: 2, position: "relative", height: 420, borderRadius: 4, overflow: "hidden" }}>
+          <div className="order-1 md:order-2 relative h-[320px] md:h-[420px] rounded overflow-hidden">
             <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop&q=80" alt="Landscape" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(5,5,9,0.7), rgba(5,5,9,0.1))" }} />
             <span style={{ position: "absolute", bottom: 16, left: 16, fontSize: 9, color: "rgba(246, 243, 240, 0.5)", fontFamily: '"Inter", sans-serif', letterSpacing: "0.1em" }}>HIMALAYAN FOOTHILLS, 2024</span>
@@ -61,8 +61,8 @@ export default function Story() {
         </div>
 
         {/* Panel 2 */}
-        <div ref={panel2Ref} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "4rem", alignItems: "center", marginBottom: "7rem" }}>
-          <div style={{ order: 2 }}>
+        <div ref={panel2Ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-28">
+          <div className="order-2">
             <p className="label-small" style={{ color: "#d4a0a8", marginBottom: "1.5rem" }}>The Craft</p>
             <h2 className="display-heading" style={{ fontSize: "clamp(32px, 3.5vw, 48px)", whiteSpace: "pre-line", marginBottom: "2rem" }}>
               {"Cold-process extraction,\nzero synthetic accord"}
@@ -72,7 +72,7 @@ export default function Story() {
               Our process takes 14 days per batch. Every ingredient is sourced within 200km of its origin terrain. The result is a fragrance that carries the memory of a real place.
             </p>
           </div>
-          <div style={{ order: 1, position: "relative", height: 420, borderRadius: 4, overflow: "hidden" }}>
+          <div className="order-1 relative h-[320px] md:h-[420px] rounded overflow-hidden">
             <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=900&auto=format&fit=crop&q=80" alt="Distillation" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(5,5,9,0.7), rgba(5,5,9,0.1))" }} />
             <span style={{ position: "absolute", bottom: 16, left: 16, fontSize: 9, color: "rgba(246, 243, 240, 0.5)", fontFamily: '"Inter", sans-serif', letterSpacing: "0.1em" }}>EXTRACTION STUDIO, KERALA</span>

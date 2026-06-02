@@ -14,17 +14,11 @@ export default function Header() {
   return (
     <header style={{ position: "fixed", top: 24, left: "50%", transform: "translateX(-50%)", zIndex: 50, pointerEvents: "none" }}>
       <nav
+        className="flex items-center gap-4 md:gap-6 px-4 md:px-6 py-3 rounded-full pointer-events-auto transition-colors duration-300"
         style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 24,
-          padding: "12px 16px 12px 24px",
-          borderRadius: 9999,
           backdropFilter: "blur(24px)",
           background: scrolled ? "rgba(5, 5, 9, 0.8)" : "rgba(5, 5, 9, 0.45)",
           border: "1px solid rgba(255, 255, 255, 0.05)",
-          transition: "background 0.3s ease",
-          pointerEvents: "auto",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -43,9 +37,9 @@ export default function Header() {
           </div>
         </div>
 
-        <div style={{ width: 1, height: 16, background: "rgba(255, 255, 255, 0.1)" }} />
+        <div className="hidden sm:block w-[1px] h-4 bg-white/10" />
 
-        <div style={{ display: "flex", alignItems: "center", gap: 24, position: "relative" }}>
+        <div className="flex items-center gap-4 md:gap-6 relative">
           <div 
             onMouseEnter={() => setShowExpMenu(true)} 
             onMouseLeave={() => setShowExpMenu(false)}
@@ -90,19 +84,20 @@ export default function Header() {
               )}
             </AnimatePresence>
           </div>
-          <a href="#catalog" style={{ fontFamily: '"Inter", sans-serif', fontSize: 13, color: "rgba(246, 243, 240, 0.7)", transition: "color 0.3s" }} onMouseEnter={e => e.currentTarget.style.color = "#F6F3F0"} onMouseLeave={e => e.currentTarget.style.color = "rgba(246, 243, 240, 0.7)"} data-cursor-hover>Collection</a>
-          <a href="#story" style={{ fontFamily: '"Inter", sans-serif', fontSize: 13, color: "rgba(246, 243, 240, 0.7)", transition: "color 0.3s" }} onMouseEnter={e => e.currentTarget.style.color = "#F6F3F0"} onMouseLeave={e => e.currentTarget.style.color = "rgba(246, 243, 240, 0.7)"} data-cursor-hover>Story</a>
+          <a href="#catalog" className="hidden sm:block" style={{ fontFamily: '"Inter", sans-serif', fontSize: 13, color: "rgba(246, 243, 240, 0.7)", transition: "color 0.3s" }} onMouseEnter={e => e.currentTarget.style.color = "#F6F3F0"} onMouseLeave={e => e.currentTarget.style.color = "rgba(246, 243, 240, 0.7)"} data-cursor-hover>Collection</a>
+          <a href="#story" className="hidden sm:block" style={{ fontFamily: '"Inter", sans-serif', fontSize: 13, color: "rgba(246, 243, 240, 0.7)", transition: "color 0.3s" }} onMouseEnter={e => e.currentTarget.style.color = "#F6F3F0"} onMouseLeave={e => e.currentTarget.style.color = "rgba(246, 243, 240, 0.7)"} data-cursor-hover>Story</a>
         </div>
 
-        <div style={{ width: 1, height: 16, background: "rgba(255, 255, 255, 0.1)" }} />
+        <div className="hidden sm:block w-[1px] h-4 bg-white/10" />
 
         <button
-          style={{ padding: "8px 20px", borderRadius: 9999, border: "1px solid #F2D28B", color: "#F2D28B", fontFamily: '"Inter", sans-serif', fontSize: 13, transition: "background 0.3s" }}
+          className="px-4 py-2 text-xs md:text-[13px] border border-[#F2D28B] text-[#F2D28B] rounded-full transition-colors duration-300"
+          style={{ fontFamily: '"Inter", sans-serif' }}
           onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(242, 210, 139, 0.1)")}
           onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
           data-cursor-hover
         >
-          Shop Now
+          Shop
         </button>
       </nav>
     </header>
