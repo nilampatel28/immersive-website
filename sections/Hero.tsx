@@ -7,7 +7,7 @@ import BuyCard from "@/components/BuyCard";
 const INTRO_VIDEO =
   "https://res.cloudinary.com/drql9cjic/video/upload/v1779364541/Fairy_plain_with_fireflies_and_202605201940_yc5vnp.mp4";
 const EXPERIENCE_VIDEO =
-  "https://res.cloudinary.com/drql9cjic/video/upload/v1779365073/Scroll_based_website_1_j5b72d.mp4";
+  "https://res.cloudinary.com/dq0rh2mgj/video/upload/v1780433876/Timeline_1_razkcu.mp4";
 
 const TOTAL_VIDEO_DURATION = 55; // seconds
 const PX_PER_SECOND = 200;

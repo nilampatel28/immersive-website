@@ -3,6 +3,7 @@ import Head from "next/head";
 const CustomCursor = dynamic(() => import("@/components/CustomCursor"), { ssr: false });
 const Hero = dynamic(() => import("@/sections/Hero"), { ssr: false });
 const Catalog = dynamic(() => import("@/sections/Catalog"), { ssr: false });
+const VideoSection = dynamic(() => import("@/sections/VideoSection"), { ssr: false });
 const Story = dynamic(() => import("@/sections/Story"), { ssr: false });
 const Footer = dynamic(() => import("@/sections/Footer"), { ssr: false });
 
@@ -18,6 +19,7 @@ export default function Home() {
       <main style={{ background: "#050509", cursor: "none" }}>
         <Hero />
         <Catalog />
+        <VideoSection />
         <Story />
         <Footer />
       </main>
