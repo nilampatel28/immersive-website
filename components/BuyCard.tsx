@@ -31,7 +31,7 @@ export default function BuyCard({ frame, visible }: BuyCardProps) {
             style={{ maxWidth: 280 }}
           >
             <p style={{ fontSize: 9, letterSpacing: "0.35em", textTransform: "uppercase", color: "#F2D28B", marginBottom: 16 }}>
-              FRAGRANCE
+              HARDWARE
             </p>
             <h3 style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: 26, fontWeight: 400, color: "#F6F3F0", marginBottom: 16 }}>
               {frame.title}

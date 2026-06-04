@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Indian Fragrances — Sacred Essences of India</title>
-        <meta name="description" content="A luxury fragrance experience drawn from the sacred landscapes of India." />
+        <title>Aura Tech — Next-Generation Computing</title>
+        <meta name="description" content="A luxury computing experience driven by cutting-edge design and silicon architecture." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <CustomCursor />

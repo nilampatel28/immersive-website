@@ -44,8 +44,8 @@ export default function Catalog() {
     <section id="catalog" ref={sectionRef} style={{ background: "#050509", padding: "8rem 2rem" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ marginBottom: "4rem", textAlign: "center" }}>
-          <p className="label-small" style={{ color: "#F2D28B", marginBottom: "1rem" }}>The Collection</p>
-          <h2 className="display-heading" style={{ fontSize: "clamp(32px, 4vw, 56px)", marginBottom: "2rem" }}>Our Sacred Essences</h2>
+          <p className="label-small" style={{ color: "#F2D28B", marginBottom: "1rem" }}>The Setup</p>
+          <h2 className="display-heading" style={{ fontSize: "clamp(32px, 4vw, 56px)", marginBottom: "2rem" }}>Our Flagship Systems</h2>
           <div style={{ width: 60, height: 1, background: "rgba(242, 210, 139, 0.4)", margin: "0 auto" }} />
         </div>
         

@@ -31,8 +31,8 @@ export default function Header() {
               <line x1="36" y1="20" x2="38.5" y2="20" stroke="#F2D28B" strokeWidth="0.7" strokeOpacity="0.4" />
             </svg>
             <div style={{ position: "absolute", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: 15, color: "#F2D28B", lineHeight: 1 }}>IF</span>
-              <span style={{ fontFamily: '"Inter", sans-serif', fontSize: 6.5, color: "rgba(242, 210, 139, 0.55)", letterSpacing: "0.32em", textTransform: "uppercase", marginTop: 2 }}>FRAGRANCES</span>
+              <span style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: 15, color: "#F2D28B", lineHeight: 1 }}>IT</span>
+              <span style={{ fontFamily: '"Inter", sans-serif', fontSize: 6.5, color: "rgba(242, 210, 139, 0.55)", letterSpacing: "0.32em", textTransform: "uppercase", marginTop: 2 }}>TECHNOLOGY</span>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Header() {
                   style={{ position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)", paddingTop: 16 }}
                 >
                   <div style={{ backdropFilter: "blur(24px)", background: "rgba(5, 5, 9, 0.9)", borderRadius: 16, border: "1px solid rgba(255, 255, 255, 0.1)", padding: 8, display: "flex", flexDirection: "column", minWidth: 160 }}>
-                    {["Maheshwari", "Mahalakshmi", "Mahakali", "Mahashakti", "Jungle Essence", "Himalaya Essence"].map((item, i) => (
+                    {["The Chassis", "The Display", "The Core", "The Keyboard", "Connectivity", "The Battery"].map((item, i) => (
                       <motion.a
                         key={item}
                         href="#"
@@ -102,4 +102,6 @@ export default function Header() {
       </nav>
     </header>
   );
+}
+
 }

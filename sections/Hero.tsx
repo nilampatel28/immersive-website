@@ -15,12 +15,12 @@ const TOTAL_SCROLL_PX = TOTAL_VIDEO_DURATION * PX_PER_SECOND;
 
 const SEGMENTS = [
   { id: "entry", frameId: "entry", transitionStart: 0, transitionEnd: 2, loopStart: 2, loopEnd: 3, scrollResume: 3 },
-  { id: "maheshwari", frameId: "maheshwari", transitionStart: 3, transitionEnd: 6, loopStart: 6, loopEnd: 8, scrollResume: 8 },
-  { id: "mahalakshmi", frameId: "mahalakshmi", transitionStart: 8, transitionEnd: 12, loopStart: 12, loopEnd: 16, scrollResume: 16 },
-  { id: "mahakali", frameId: "mahakali", transitionStart: 16, transitionEnd: 21, loopStart: 21, loopEnd: 24, scrollResume: 24 },
-  { id: "mahashakti", frameId: "mahashakti", transitionStart: 24, transitionEnd: 28, loopStart: 28, loopEnd: 32, scrollResume: 32 },
-  { id: "jungle-essence", frameId: "jungle-essence", transitionStart: 32, transitionEnd: 36, loopStart: 36, loopEnd: 40, scrollResume: 40 },
-  { id: "himalaya-essence", frameId: "himalaya-essence", transitionStart: 40, transitionEnd: 45, loopStart: 45, loopEnd: 50, scrollResume: 50 },
+  { id: "chassis", frameId: "chassis", transitionStart: 3, transitionEnd: 6, loopStart: 6, loopEnd: 8, scrollResume: 8 },
+  { id: "display", frameId: "display", transitionStart: 8, transitionEnd: 12, loopStart: 12, loopEnd: 16, scrollResume: 16 },
+  { id: "core", frameId: "core", transitionStart: 16, transitionEnd: 21, loopStart: 21, loopEnd: 24, scrollResume: 24 },
+  { id: "keyboard", frameId: "keyboard", transitionStart: 24, transitionEnd: 28, loopStart: 28, loopEnd: 32, scrollResume: 32 },
+  { id: "connectivity", frameId: "connectivity", transitionStart: 32, transitionEnd: 36, loopStart: 36, loopEnd: 40, scrollResume: 40 },
+  { id: "battery", frameId: "battery", transitionStart: 40, transitionEnd: 45, loopStart: 45, loopEnd: 50, scrollResume: 50 },
   { id: "outro", frameId: "loop-complete", transitionStart: 50, transitionEnd: 55, loopStart: 50, loopEnd: 55, scrollResume: 55 },
 ];
 

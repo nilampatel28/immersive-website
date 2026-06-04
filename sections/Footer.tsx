@@ -13,13 +13,13 @@ export default function Footer() {
             <polygon points="20,33.6 21.4,35.8 20,38 18.6,35.8" fill="#F2D28B" fillOpacity="0.65" />
             <line x1="1.5" y1="20" x2="4" y2="20" stroke="#F2D28B" strokeWidth="0.7" strokeOpacity="0.4" />
             <line x1="36" y1="20" x2="38.5" y2="20" stroke="#F2D28B" strokeWidth="0.7" strokeOpacity="0.4" />
-            <text x="20" y="24" fontFamily='"Cormorant Garamond", serif' fontSize="15" fill="#F2D28B" textAnchor="middle">IF</text>
+            <text x="20" y="24" fontFamily='"Cormorant Garamond", serif' fontSize="15" fill="#F2D28B" textAnchor="middle">IT</text>
           </svg>
           <h2 style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: "1.4rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "#F6F3F0", marginBottom: "0.5rem" }}>
-            INDIAN FRAGRANCES
+            IMMERSIVE TECHNOLOGY
           </h2>
           <p style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.65rem", color: "#9E9EAE", letterSpacing: "0.1em" }}>
-            Sacred Essences of India
+            Next Generation Hardware
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
           <div>
             <h4 style={{ fontFamily: '"Inter", sans-serif', fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#F2D28B", marginBottom: "1.5rem" }}>Experience</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {["Maheshwari", "Mahalakshmi", "Mahakali", "Mahashakti", "Jungle Essence", "Himalaya Essence"].map(link => (
+              {["The Chassis", "The Display", "The Core", "The Keyboard", "Connectivity", "The Battery"].map(link => (
                 <li key={link}>
                   <a href="#" style={{ fontFamily: '"Inter", sans-serif', fontSize: 13, color: "rgba(246, 243, 240, 0.6)", transition: "color 0.3s" }} onMouseEnter={e => e.currentTarget.style.color = "#F6F3F0"} onMouseLeave={e => e.currentTarget.style.color = "rgba(246, 243, 240, 0.6)"} data-cursor-hover>{link}</a>
                 </li>
@@ -62,7 +62,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(242, 210, 139, 0.1)", paddingTop: "1.5rem" }}>
-          <p style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.65rem", color: "#9E9EAE" }}>© 2026 Indian Fragrances. All rights reserved.</p>
+          <p style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.65rem", color: "#9E9EAE" }}>© 2026 Aura Tech. All rights reserved.</p>
           <p style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.65rem", color: "#9E9EAE" }}>Crafted with intention.</p>
         </div>
         
